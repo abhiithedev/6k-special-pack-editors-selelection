@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>6K Subs Editor CV Form - XI EDITZ</title>
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 30px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 750px;
+      padding: 30px;
+      box-shadow: 0 0 30px rgba(0, 255, 234, 0.15);
+      border: 1px solid rgba(0, 255, 234, 0.2);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .banner {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1%;
+    }
+
+    h2 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #141414;
+      border: 1px solid #00ffe7;
+      border-radius: 20px;
+      padding: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+
+    .checkbox-item:hover {
+      background: #00ffe733;
+      box-shadow: 0 0 12px #00ffe7aa;
+    }
+
+    .checkbox-item input[type="checkbox"] {
+      display: none;
+    }
+
+    .checkbox-item.active {
+      background: #00ffe7;
+      color: #000;
+      font-weight: bold;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #00ffe7;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #00c7b3;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    /* Wavy letter effect */
+
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="header">
+      <!-- Replace with your actual image links -->
+      <img class="banner" src="https://yt3.googleusercontent.com/aqbRwHMeRNp4qh6hHPkElDKqwTZM-aWdhDh4F0W3ZxBZJjZytiqQsOJuUGz5habMMfxUjC2KhA=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="Xi Editz Banner" />
+      <h2> 6K SUBS SPECIAL PACK EDITORS SELECTION</h2>
+      <p>Sponsored & Hosted by <strong>XI EDITZ</strong></p>
+    </div>
+
+    <form action="https://formspree.io/f/mzzekvov" method="POST" onsubmit="return validateForm()">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="channelName">YouTube Channel Name</label>
+      <input type="text" id="channelName" name="channelName" required />
+
+      <label for="channelLink">YouTube Channel Link</label>
+      <input type="url" id="channelLink" name="channelLink" required />
+
+      <label for="help">How can you help in the 6K Subs Special Pack?</label>
+      <textarea id="help" name="help" rows="4" required></textarea>
+
+      <label>What makes your work special? (Select acc to your work)</label>
+      <div class="checkbox-grid">
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="CC"> CC</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Text"> Text</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Shake"> Shake</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Panning"> Panning</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Zoom"> Zoom</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Glitch"> Glitch</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Effect Pack"> Effect Pack</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Transition"> Transition</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Intro/Outro"> Intro/Outro</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="PFP"> PFP</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Thumbnail"> Thumbnail</label>
+        <label class="checkbox-item"><input type="checkbox" name="special[]" value="Font Pack"> Font Pack</label>
+      </div>
+
+      <label for="packLink">Drop Your Pack Link (Google Drive, Mediafire etc.)</label>
+      <input type="url" id="packLink" name="packLink" required />
+
+      <label for="social">Instagram or Social Handle (Optional)</label>
+      <input type="text" id="social" name="social" />
+
+      <button type="submit">Submit Form</button>
+    </form>
+
+    <div class="footer">
+      © 2025 XI EDITZ | Let's build something epic for 6K Subs 🧨
+    </div>
+  </div>
+
+  <script>
+    // Toggle active style on checkboxes
+    document.querySelectorAll('.checkbox-item input').forEach(checkbox => {
+      checkbox.addEventListener('change', function () {
+        this.parentElement.classList.toggle('active', this.checked);
+      });
+    });
+
+    // Form validation
+    function validateForm() {
+      const packLink = document.getElementById("packLink").value;
+      if (!packLink.includes("http")) {
+        alert("Please enter a valid pack link.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+</body>
+</html>
